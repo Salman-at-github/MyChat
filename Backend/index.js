@@ -2,10 +2,14 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 app.use(cors())
+
+//create http
 const http = require('http');
 const myServer = http.createServer(app);
 
 const {Server} = require('socket.io');
+
+//create io
 const io = new Server(myServer, {cors:{
     //front end connection
     origin: "http://localhost:3000",
