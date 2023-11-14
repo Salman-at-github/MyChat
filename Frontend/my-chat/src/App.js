@@ -2,6 +2,7 @@ import {  useRef, useState } from 'react';
 import './App.css';
 import Chat from './Chat';
 
+
 //import io for connection
 import io from 'socket.io-client';
 //connect to backend io
